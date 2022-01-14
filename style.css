@@ -34,7 +34,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 50px;
+    padding: 87px 50px;
 }
 
 .container {
@@ -78,24 +78,43 @@ header {
     border-radius: 50px;
     margin-top: 30px;
     display: inline-block;
+    transition: .3s;
 }
 
 .fa-chevron-right {
-    /* width: 20px;
-    display: inline-block; */
-    margin-left: 20px;
+    margin-left: 5px;
+    transform: translateX(5px);
+    transition: .3s;
+}
+.button__primery:hover .fa-chevron-right{
+    transform: translateX(15px);
+    transition: .1s;
+    
+}
+.button__primery:hover{
+    padding-right: 30px;
+    transition: .4s;
+    
 }
 
 .banner__item img {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+   width: 100%;
+   transform: translate(10px, -10px);
+   padding: 15px;
+   transition: .3s;
+}
+
+.banner__image:hover img {
+    transform: scale(1.1) rotate(15deg);
+    transition: .3s;
 }
 
 .banner__image {
     background: center url(images/Circle-design.svg) no-repeat;
-    background-size: cover;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -114,4 +133,7 @@ header {
         align-items: center;
         text-align: center;
     }
+    .banner__item img {
+        width: 90%;
+     }
 }
