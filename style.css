@@ -98,3 +98,20 @@ header {
     background-size: cover;
 }
 
+@media screen and (max-width: 900px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner__text {
+        margin-top: 60px;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
