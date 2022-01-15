@@ -41,8 +41,32 @@ header {
     max-width: 1188px;
 }
 
-.navbar {}
+.navbar {
+    margin-bottom: 30px;
+}
 
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {}
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    list-style: none;
+    margin-right: 34px;
+}
+.nav ul li a {
+    color: #0A0826;
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav ul li:last-child {
+    margin-right: 0;
+}
 .banner {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
