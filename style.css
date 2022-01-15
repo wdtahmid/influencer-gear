@@ -201,6 +201,11 @@ popular__collection
     color: #e02c6d;
 }
 
+/* =============
+footer
+================= */
+
+
 @media screen and (max-width: 900px) {
     .banner {
         display: flex;
