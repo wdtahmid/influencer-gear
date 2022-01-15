@@ -193,6 +193,14 @@ popular__collection
     transition: .3s;
 }
 
+.see__more__button {
+    display: block;
+    text-align: right;
+    margin-top: 40px;
+    background: transparent;
+    color: #e02c6d;
+}
+
 @media screen and (max-width: 900px) {
     .banner {
         display: flex;
