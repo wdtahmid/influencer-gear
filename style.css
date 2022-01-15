@@ -170,7 +170,7 @@ popular__collection
 
 .single__collection {
     box-shadow: -5px 0 10px gray;
-    padding: 15px;
+    padding: 15px 15px 30px 15px;
     border-radius: 10px;
     overflow: hidden;
     transition: .3s;
@@ -188,6 +188,34 @@ popular__collection
     object-fit: cover;
 }
 
+.product__title {
+    text-transform: capitalize;
+    color: #0A0826;
+}
+
+.product__price {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 7px 0;
+}
+
+.product__rating {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.product__rating .fas{
+    margin: 0;
+    font-size: 10px;
+}
+
+.product__rating span{
+    margin: 0;
+    color: #000;
+    font-size: 16px;
+}
+
 .single__collection:hover .product__image img{
     transform: scale(1.2);
     transition: .3s;
@@ -199,6 +227,13 @@ popular__collection
     margin-top: 40px;
     background: transparent;
     color: #e02c6d;
+}
+
+.single__collection p {
+    font-weight: 500;
+}
+.single__collection p::first-letter {
+    text-transform: capitalize;
 }
 
 /* =============
