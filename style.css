@@ -263,7 +263,62 @@ footer .section__title {
     color: #fff;
 }
 
-@media screen and (max-width: 900px) {
+/* ==============
+blog
+===================*/
+
+.influencer__blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+
+.blog__container {
+    max-width: 1180px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+.blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog img {
+    border-radius: 20px 20px 0 0;
+}
+
+.blog__info {
+    background: rgba(2, 7, 82);
+    color: rgb(255, 255, 255);
+    padding: 20px; 
+}
+
+.blog__title {
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 35px;
+}
+.blog__info p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.blog__info p a {
+    color: brown;
+}
+
+.blog__info .button__primery {
+    margin-top: 28px;
+}
+
+@media screen and (max-width: 992px) {
     .banner {
         display: flex;
         flex-direction: column;
@@ -285,6 +340,11 @@ footer .section__title {
 
     .collected__items {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
     }
 }
 @media screen and (max-width: 645px) {
