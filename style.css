@@ -352,4 +352,8 @@ blog
     .collected__items {
         grid-template-columns: 1fr;
     }
+
+    .logo__container img {
+        width: 58px;
+    }
 }
