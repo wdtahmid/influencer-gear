@@ -54,6 +54,13 @@ header {
 .menu__togler, #menu__togler {
     display: none;
 }
+
+.logo a {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #E02C6D;
+}
 .nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -225,6 +232,7 @@ popular__collection
     font-size: 24px;
     font-weight: 400;
     margin: 7px 0;
+    transition: .5s;
 }
 
 .product__rating {
@@ -246,6 +254,12 @@ popular__collection
 .single__collection:hover .product__image img{
     transform: scale(1.2);
     transition: .3s;
+}
+
+.single__collection:hover .product__price{
+    color: crimson;
+    font-weight: bold;
+    transition: .5s;
 }
 
 .see__more__button {
@@ -435,11 +449,14 @@ footer .section__title {
 }
 @media screen and (max-width: 645px) {
 
-    .logo img {
-        width: 90%;
+    .logo a {
+        font-size: 20px;
     }
     .collected__items {
         grid-template-columns: 1fr;
+    }
+    .popular__collection {
+        padding: 20px 10px 40px 10px;
     }
 
     .logo__container img {
@@ -448,5 +465,10 @@ footer .section__title {
 
     .banner__item img {
         width: 75%;
-     }
+    }
+
+    .influencer__blog {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
